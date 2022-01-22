@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PodcastSummary> renders the podcast channel summary including several external links 1`] = `
+<div
+  data-testid="podcast-summary"
+>
+  <p>
+    render(fm)はサンフランシスコのスタートアップでソフトウェアエンジニアとして働くYuya(
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/van_sf_engineer"
+      title="@van_sf_engineer"
+    >
+      @van_sf_engineer
+    </a>
+    )とKohei(
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/axross_"
+      title="@axross_"
+    >
+      @axross_
+    </a>
+    )が英語のポッドキャストを聴いて知ったこと・感じたことを日本語で発信するポッドキャストです。
+  </p>
+  <p
+    class="mt-4"
+  >
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://podcasts.apple.com/jp/podcast/render-fm/id1592606709"
+      title="Apple Podcast"
+    >
+      Apple Podcast
+    </a>
+    、
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://podcasts.google.com/feed/aHR0cHM6Ly9waXRwYS5qcC9yc3MvcmVuZGVyZm0"
+      title="Google Podcasts"
+    >
+      Google Podcasts
+    </a>
+    、
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://open.spotify.com/show/1ujtNoh3GkmJd830TRXB16"
+      title="Spotify"
+    >
+      Spotify
+    </a>
+    <span>
+      でも配信しています。
+    </span>
+  </p>
+</div>
+`;

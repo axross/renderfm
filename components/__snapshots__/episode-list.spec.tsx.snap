@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EpisodeList> takes rows as the children and renders them 1`] = `
+<div
+  class="-mx-4 sm:-mx-6 -my-6"
+  data-testid="episode-list"
+>
+  <div
+    class="w-full pl-4 sm:pl-6 pr-2 sm:pr-4 py-4 border-b border-slate-200 dark:border-zinc-700"
+    data-testid="row"
+  >
+    <div
+      class="text-slate-900 dark:text-zinc-50 text-lg font-semibold"
+    >
+      navigating the hard drive wont do anything, we need to synthesize the auxiliary USB circuit!
+    </div>
+    <div
+      class="flex gap-x-4 mt-1"
+    >
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          15367
+           mins
+        </span>
+      </span>
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+            stroke="none"
+          />
+          <rect
+            height="16"
+            rx="2"
+            width="16"
+            x="4"
+            y="5"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="11"
+            y2="11"
+          />
+          <rect
+            height="2"
+            width="2"
+            x="8"
+            y="15"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          5 months ago
+        </span>
+      </span>
+    </div>
+    <div
+      class="mt-2 text-sm line-clamp-2"
+    >
+      Quae a rerum repellat unde consectetur esse quas fugit quasi nulla, quas sed.
+    </div>
+  </div>
+  <div
+    class="w-full pl-4 sm:pl-6 pr-2 sm:pr-4 py-4 border-b border-slate-200 dark:border-zinc-700"
+    data-testid="row"
+  >
+    <div
+      class="text-slate-900 dark:text-zinc-50 text-lg font-semibold"
+    >
+      We need to generate the virtual USB pixel!
+    </div>
+    <div
+      class="flex gap-x-4 mt-1"
+    >
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          2487
+           mins
+        </span>
+      </span>
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+            stroke="none"
+          />
+          <rect
+            height="16"
+            rx="2"
+            width="16"
+            x="4"
+            y="5"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="11"
+            y2="11"
+          />
+          <rect
+            height="2"
+            width="2"
+            x="8"
+            y="15"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          6 months ago
+        </span>
+      </span>
+    </div>
+    <div
+      class="mt-2 text-sm line-clamp-2"
+    >
+      Quas numquam vitae laborum excepturi asperiores.
+    </div>
+  </div>
+  <div
+    class="w-full pl-4 sm:pl-6 pr-2 sm:pr-4 py-4 border-b border-slate-200 dark:border-zinc-700"
+    data-testid="row"
+  >
+    <div
+      class="text-slate-900 dark:text-zinc-50 text-lg font-semibold"
+    >
+      You cant hack the card without indexing the primary XSS capacitor!
+    </div>
+    <div
+      class="flex gap-x-4 mt-1"
+    >
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          2167
+           mins
+        </span>
+      </span>
+      <span
+        class="flex items-center gap-x-1 text-slate-500 dark:text-zinc500"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+            stroke="none"
+          />
+          <rect
+            height="16"
+            rx="2"
+            width="16"
+            x="4"
+            y="5"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="3"
+            y2="7"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="11"
+            y2="11"
+          />
+          <rect
+            height="2"
+            width="2"
+            x="8"
+            y="15"
+          />
+        </svg>
+        <span
+          class="text-xs"
+        >
+          3 months ago
+        </span>
+      </span>
+    </div>
+    <div
+      class="mt-2 text-sm line-clamp-2"
+    >
+      Possimus quasi nostrum cum voluptatibus hic cum repellat ducimus maiores nulla voluptate possimus nostrum sed sed quia laborum cupiditate in sequi esse excepturi quasi commodi necessitatibus, asperiores doloribus ipsum.
+    </div>
+  </div>
+</div>
+`;

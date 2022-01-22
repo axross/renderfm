@@ -1,0 +1,90 @@
+[
+  {
+    "id": "5",
+    "publishedAt": "2022-02-06T08:00:00.000Z",
+    "duration": 2343.807771,
+    "audioUrl": "/episodes/5.mp3",
+    "title": "React 18 - Part 1",
+    "summaryMarkdown":
+      "React 18で何が変わるか、RC版をもとに紹介しました。\n\nSyntaxの [#370 React 18 - A Look Ahead](https://syntax.fm/show/370/react-18-a-look-ahead) を聴いていろいろ話す予定でしたが、キャッチアップしてみたら当時から結構変わってたので元のポッドキャストについてはあまり触れてません...。",
+    "timeline": [
+      ["オープニング", "00:39"],
+      ["React 17からのマイグレーション ReactDOM.createRoot()", "01:35"],
+      ["Automatic Batching", "02:34"]
+    ]
+  },
+  {
+    "id": "4",
+    "publishedAt": "2021-12-25T08:00:00.000Z",
+    "duration": 2520.82375,
+    "audioUrl": "/episodes/4.mp3",
+    "title": "Tailwind CSS - Part 2",
+    "summaryMarkdown":
+      "JS Partyの [#155 The Tailwind beneath my wings](https://changelog.com/jsparty/155) を聴いて[@yuya](https://twitter.com/van_sf_engineer)と[@kohei](https://twitter.com/axross_)がいろいろ話しました。後編です。",
+    "timeline": [
+      ["オープニング", "00:57"],
+      ["『おい、そのイカしたUIフレームワークは何なんだ？』", "01:10"],
+      ["一風変わったマネタイズ", "04:11"],
+      ["Tailwindは法人化してもきちんとOSSに時間を割いている", "10:35"],
+      ["Tailwind Playrgound", "19:24"],
+      ["TailwindはCSSの「解」なのか？", "22:17"],
+      ["UIデザインの素養は誰でも持つべきなのか？", "32:55"],
+      ["Wrap-up", "38:00"]
+    ]
+  },
+  {
+    "id": "3",
+    "publishedAt": "2021-12-20T10:04:00.000Z",
+    "duration": 1844.404667,
+    "audioUrl": "/episodes/3.mp3",
+    "title": "Tailwind CSS - Part 1",
+    "summaryMarkdown":
+      "JS Partyの [#155 The Tailwind beneath my wings](https://changelog.com/jsparty/155) を聴いて[@yuya](https://twitter.com/van_sf_engineer)と[@kohei](https://twitter.com/axross_)がいろいろ話しました。前編です。",
+    "timeline": [
+      ["オープニング", "00:42"],
+      ["CSSの何が悪いのか？", "04:10"],
+      ["Tailwind CSSは「秘伝のタレ」から始まった", "13:13"],
+      ["Tailwind CSSがPostCSSを使い始めた経緯", "21:19"],
+      ["最初のバージョンのリリース", "28:22"]
+    ]
+  },
+  {
+    "id": "2",
+    "publishedAt": "2021-11-10T07:59:37.000Z",
+    "duration": 3781.1965,
+    "audioUrl": "/episodes/2.mp3",
+    "title": "The State of JS 2020",
+    "summaryMarkdown":
+      "JS Partyの [#160 Breaking down the State of CSS/JS](https://changelog.com/jsparty/160) を聴いて[@yuya](https://twitter.com/van_sf_engineer)と[@kohei](https://twitter.com/axross_)がいろいろ話しました。後編です。",
+    "timeline": [
+      ["オープニング - renderfmを始めた経緯", "00:44"],
+      ["TypeScriptとストックホルム症候群", "01:41"],
+      ["JavaScriptは複雑でなくなってきている？", "09:48"],
+      ["メタフレームワークで何を得て何を失ったか", "12:50"],
+      ["利用度と満足度 - 統計の落とし穴", "35:10"],
+      ["Testing Libraryの台頭", "44:09"]
+    ]
+  },
+  {
+    "id": "1",
+    "publishedAt": "2021-10-28T08:22:07.000Z",
+    "duration": 3181.931917,
+    "audioUrl": "/episodes/1.mp3",
+    "title": "The State of CSS 2020",
+    "summaryMarkdown":
+      "JS Partyの [#160 Breaking down the State of CSS/JS](https://changelog.com/jsparty/160) を聴いて[@yuya](https://twitter.com/van_sf_engineer)と[@kohei](https://twitter.com/axross_)がいろいろ話しました。前編です。",
+    "timeline": [
+      ["オープニング - renderfmを始めた経緯", "00:52"],
+      ["元になったエピソードについて", "02:52"],
+      ["State of CSSとは", "03:16"],
+      ["CSSに対する\"苦情\"", "04:24"],
+      ["CSSは進化の途中", "07:04"],
+      ["\"Cascading\" Style Sheets とは何なのか", "14:47"],
+      ["昨今のWebアプリケーションはカスケーディングしたくない", "18:22"],
+      ["caniuse.comなしでは生きていけない身体", "24:17"],
+      ["Tailwind CSS", "29:40"],
+      ["CSS in JSとStyle Compositionについて", "41:20"],
+      ["Wrap-up", "52:54"]
+    ]
+  }
+]

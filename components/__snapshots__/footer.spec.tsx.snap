@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer> renders the authors' names 1`] = `
+<footer
+  class="py-8 px-4"
+  data-testid="footer"
+>
+  <div
+    class="text-slate-500 dark:text-zinc-500 text-sm text-center"
+  >
+    ©️ 2021-2022 
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/van_sf_engineer"
+    >
+      @yuya
+    </a>
+     & 
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/axross_"
+    >
+      @kohei
+    </a>
+    .
+  </div>
+</footer>
+`;

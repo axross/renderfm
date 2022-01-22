@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EpisodeTimeline> takes items as the children and renders them 1`] = `
+<ul
+  class="flex flex-col gap-y-1 list-disc list-inside"
+  data-testid="episode-timeline"
+>
+  <li
+    class="marker:text-slate-400 dark:marker:text-zinc-600"
+    data-testid="item"
+  >
+    <span
+      data-testid="label"
+    >
+      navigating the hard drive wont do anything, we need to synthesize the auxiliary USB circuit!
+    </span>
+    <span
+      class="ml-1"
+    >
+      [
+      <span
+        class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline cursor-pointer"
+        data-testid="time"
+        tabindex="0"
+      >
+        04
+        :
+        37
+      </span>
+      ]
+    </span>
+  </li>
+  <li
+    class="marker:text-slate-400 dark:marker:text-zinc-600"
+    data-testid="item"
+  >
+    <span
+      data-testid="label"
+    >
+      Use the auxiliary JSON card, then you can copy the optical matrix!
+    </span>
+    <span
+      class="ml-1"
+    >
+      [
+      <span
+        class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline cursor-pointer"
+        data-testid="time"
+        tabindex="0"
+      >
+        08
+        :
+        41
+      </span>
+      ]
+    </span>
+  </li>
+  <li
+    class="marker:text-slate-400 dark:marker:text-zinc-600"
+    data-testid="item"
+  >
+    <span
+      data-testid="label"
+    >
+      Ill synthesize the primary AI capacitor, that should array the JBOD sensor!
+    </span>
+    <span
+      class="ml-1"
+    >
+      [
+      <span
+        class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline cursor-pointer"
+        data-testid="time"
+        tabindex="0"
+      >
+        16
+        :
+        11
+      </span>
+      ]
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`<EpisodeTimelineItem> renders the label and time 1`] = `
+<span
+  data-testid="label"
+>
+  Use the redundant AGP transmitter, then you can generate the 1080p circuit!
+</span>
+`;
+
+exports[`<EpisodeTimelineItem> renders the label and time 2`] = `
+<span
+  class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline cursor-pointer"
+  data-testid="time"
+  tabindex="0"
+>
+  02
+  :
+  19
+</span>
+`;

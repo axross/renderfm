@@ -1,0 +1,44 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "tsconfigRootDir": "./",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "jest"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "next/core-web-vitals"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "./**/*.stories.tsx?"
+      ],
+      "extends": [
+        "plugin:storybook/recommended"
+      ]
+    },
+    {
+      "files": [
+        "./**/*.tsx?"
+      ],
+      "excludedFiles": "./e2e-tests/**/*.tsx?",
+      "extends": [
+        "plugin:jest/recommended"
+      ]
+    },
+    {
+      "files": [
+        "./e2e-tests/**/*.tsx?"
+      ],
+      "extends": [
+        "plugin:playwright/playwright-test"
+      ]
+    }
+  ]
+}

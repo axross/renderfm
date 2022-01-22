@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Markdown> renders the markdown in respective html elements 1`] = `
+<div
+  class="prose dark:prose-invert prose-slate"
+  data-testid="markdown"
+>
+  <p>
+    JS Partyの 
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://changelog.com/jsparty/160"
+    >
+      #160 Breaking down the State of CSS/JS
+    </a>
+     を聴いて
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/van_sf_engineer"
+    >
+      @yuya
+    </a>
+    と
+    <a
+      class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+      href="https://twitter.com/axross_"
+    >
+      @kohei
+    </a>
+    がいろいろ話しました。前編です。
+  </p>
+</div>
+`;

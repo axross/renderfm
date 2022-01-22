@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayerBar> renders the player bar that contains pause button when playing=true is given 1`] = `
+<button
+  aria-label="Pause"
+  class="inline-flex items-center rounded-md disabled:cursor-not-allowed bg-yellow-600 disabled:bg-yellow-600/50 text-white outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all p-2 focus:ring-offset-yellow-900 dark:focus:ring-offset-yellow-100"
+  data-testid="playback-button"
+>
+  <svg
+    class="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+  </svg>
+</button>
+`;
+
+exports[`<PlayerBar> renders the player bar that contains play button 1`] = `
+<button
+  aria-label="Play"
+  class="inline-flex items-center rounded-md disabled:cursor-not-allowed bg-yellow-600 disabled:bg-yellow-600/50 text-white outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all p-2 focus:ring-offset-yellow-900 dark:focus:ring-offset-yellow-100"
+  data-testid="playback-button"
+>
+  <svg
+    class="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+    <path
+      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+  </svg>
+</button>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 1`] = `
+<div
+  class="row-start-1 col-start-1 pointer-fine:col-start-2 self-end text-slate-100 dark:text-zinc-900 font-semibold truncate select-none"
+  data-testid="track-title"
+>
+  navigating the hard drive wont do anything, we need to synthesize the auxiliary USB circuit!
+</div>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 2`] = `
+<span
+  data-testid="current-time"
+>
+  7:00
+</span>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 3`] = `
+<span
+  data-testid="duration"
+>
+  16:01
+</span>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 4`] = `
+<button
+  aria-busy="false"
+  class="inline-flex items-center rounded-md disabled:cursor-not-allowed bg-yellow-600/20 hover:bg-yellow-600/30 disabled:bg-yellow-600/10 text-yellow-600 outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all px-4 py-2 text-base pointer-fine:hidden"
+  data-testid="rewind-button"
+>
+  <svg
+    class="h-6 w-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+  </svg>
+  <span
+    class="text-sm"
+  >
+    15s
+  </span>
+</button>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 5`] = `
+<button
+  aria-busy="false"
+  class="inline-flex items-center rounded-md disabled:cursor-not-allowed bg-yellow-600/20 hover:bg-yellow-600/30 disabled:bg-yellow-600/10 text-yellow-600 outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all px-4 py-2 text-base pointer-fine:hidden"
+  data-testid="forward-button"
+>
+  <span
+    class="text-sm"
+  >
+    15s
+  </span>
+  <svg
+    class="h-6 w-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+  </svg>
+</button>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 6`] = `
+<button
+  class="inline-flex items-center rounded-md disabled:cursor-not-allowed bg-yellow-600/20 hover:bg-yellow-600/30 disabled:bg-yellow-600/10 text-yellow-600 outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all p-1 absolute top-2 right-2"
+  data-testid="close-button"
+>
+  <svg
+    class="w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6 18L18 6M6 6l12 12"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+    />
+  </svg>
+</button>
+`;
+
+exports[`<PlayerBar> renders the player bar that displays episode title, duration and several controls 7`] = `
+<span
+  class="row-start-2 col-span-2 h-3 pointer-fine:h-2 mt-4 pointer-fine:mt-2"
+  data-mockfor="SeekBar"
+  data-testid="seek-bar"
+  value="0.43704474505723206"
+/>
+`;

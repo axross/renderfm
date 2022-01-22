@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullLogo> renders the renderfm full logo 1`] = `
+<div
+  class="flex items-end"
+  data-testid="full-logo"
+>
+  <span
+    class="shrink-0 text-slate-900 dark:text-slate-50 text-[42px] font-bold font-logo leading-8"
+  >
+    render(
+  </span>
+  <span
+    class="relative block w-16 h-16 bg-[#f0db4f] shrink-0"
+  >
+    <span
+      class="absolute inline-block -bottom-1 right-[1px] bg-logo-pattern bg-cover text-slate-900 text-[42px] font-bold font-logo tracking-tight leading-10 scale-x-90"
+    >
+      <span
+        class="uppercase"
+      >
+        f
+      </span>
+      <span
+        class="uppercase"
+      >
+        m
+      </span>
+    </span>
+  </span>
+  <span
+    class="shrink-0 text-slate-900 dark:text-slate-50 text-[42px] font-bold font-logo leading-8"
+  >
+    )
+  </span>
+</div>
+`;
+
+exports[`<Logo> renders the renderfm square logo 1`] = `
+<span
+  class="relative block w-16 h-16 bg-[#f0db4f]"
+  data-testid="logo"
+>
+  <span
+    class="absolute inline-block -bottom-1 right-[1px] bg-logo-pattern bg-cover text-slate-900 text-[42px] font-bold font-logo tracking-tight leading-10 scale-x-90"
+  >
+    <span
+      class="uppercase"
+    >
+      f
+    </span>
+    <span
+      class="uppercase"
+    >
+      m
+    </span>
+  </span>
+</span>
+`;

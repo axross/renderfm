@@ -1,0 +1,62 @@
+name: on Push to Main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  lint:
+    uses: axross/renderfm/.github/workflows/callable-lint.yml@main
+  unit-test:
+    uses: axross/renderfm/.github/workflows/callable-unit-test.yml@main
+  e2e-test:
+    uses: axross/renderfm/.github/workflows/callable-e2e-test.yml@main
+  build:
+    uses: axross/renderfm/.github/workflows/callable-build.yml@main
+    with:
+      build: $GITHUB_SHA
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs:
+      - lint
+      - unit-test
+      - e2e-test
+      - build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+      - name: Create Vercel Project JSON
+        run: mkdir .vercel && echo '${{ secrets.VERCEL_PROJECT_JSON }}' > .vercel/project.json
+      - name: Deploy to Vercel
+        id: netlify-deploy
+        run: |
+          npx vercel deploy \
+            --token=${{ secrets.VERCEL_TOKEN }} \
+            --build-env NEXT_PUBLIC_BUILD=$GITHUB_SHA \
+            --prod \
+            --confirm \
+            --no-clipboard
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs:
+      - deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Semantic Release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npx -p semantic-release -p conventional-changelog-conventionalcommits semantic-release

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClickableText> renders a focusable inline element 1`] = `
+<span
+  class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline cursor-pointer"
+  data-testid="clickable-text"
+  tabindex="0"
+>
+  Hello
+</span>
+`;
+
+exports[`<TextAnchor> renders focusable inline element 1`] = `
+<a
+  class="outline-none focus:ring-4 focus:ring-yellow-500/50 transition-all rounded-sm text-yellow-600 dark:text-yellow-400 hover:underline"
+  data-testid="text-anchor"
+  href="https://example.kohei.dev/"
+>
+  Hello
+</a>
+`;

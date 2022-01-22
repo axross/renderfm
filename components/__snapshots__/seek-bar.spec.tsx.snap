@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeekBar> renders a controlled seek bar when props.value is given 1`] = `
+<div
+  aria-valuemax="1"
+  aria-valuemin="0"
+  aria-valuenow="0.5"
+  class="relative h-2 bg-slate-500/50 rounded-full cursor-pointer"
+  data-testid="seek-bar"
+  role="meter"
+>
+  <div
+    class="absolute top-0 left-0 bottom-0 bg-yellow-500 disabled:bg-yellow-500/50 rounded-full"
+    data-testid="indicator-active"
+    style="width: 445px;"
+  />
+</div>
+`;
+
+exports[`<SeekBar> renders a controlled seek bar when props.value is given 2`] = `
+<div
+  aria-valuemax="1"
+  aria-valuemin="0"
+  aria-valuenow="0.762"
+  class="relative h-2 bg-slate-500/50 rounded-full cursor-pointer"
+  data-testid="seek-bar"
+  role="meter"
+>
+  <div
+    class="absolute top-0 left-0 bottom-0 bg-yellow-500 disabled:bg-yellow-500/50 rounded-full"
+    data-testid="indicator-active"
+    style="width: 678.1800000000001px;"
+  />
+</div>
+`;
+
+exports[`<SeekBar> renders an uncontrolled seek bar 1`] = `
+<div
+  aria-valuemax="1"
+  aria-valuemin="0"
+  aria-valuenow="0"
+  class="relative h-2 bg-slate-500/50 rounded-full cursor-pointer"
+  data-testid="seek-bar"
+  role="meter"
+>
+  <div
+    class="absolute top-0 left-0 bottom-0 bg-yellow-500 disabled:bg-yellow-500/50 rounded-full"
+    data-testid="indicator-active"
+    style="width: 0px;"
+  />
+</div>
+`;
+
+exports[`<SeekBar> renders an uncontrolled seek bar with the given defaultValue 1`] = `
+<div
+  aria-valuemax="1"
+  aria-valuemin="0"
+  aria-valuenow="0.5"
+  class="relative h-2 bg-slate-500/50 rounded-full cursor-pointer"
+  data-testid="seek-bar"
+  role="meter"
+>
+  <div
+    class="absolute top-0 left-0 bottom-0 bg-yellow-500 disabled:bg-yellow-500/50 rounded-full"
+    data-testid="indicator-active"
+    style="width: 445px;"
+  />
+</div>
+`;

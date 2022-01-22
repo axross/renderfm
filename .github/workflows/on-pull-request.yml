@@ -1,0 +1,79 @@
+name: On Pull Request
+on:
+  - pull_request
+jobs:
+  lint:
+    uses: axross/renderfm/.github/workflows/callable-lint.yml@main
+  unit-test:
+    uses: axross/renderfm/.github/workflows/callable-unit-test.yml@main
+  e2e-test:
+    uses: axross/renderfm/.github/workflows/callable-e2e-test.yml@main
+  build:
+    uses: axross/renderfm/.github/workflows/callable-build.yml@main
+    with:
+      build: ${{ github.event.pull_request.head.sha }}
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    needs:
+      - lint
+      - unit-test
+      - e2e-test
+      - build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Find Deploy Result Comment
+        id: find-deploy-result-comment
+        uses: peter-evans/find-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "- Commit hash: "
+          direction: last
+      - name: Update Deploy Result Comment - Started
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-deploy-result-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            :gear: Deployment has been started.
+
+            - Commit hash: `${{ github.event.pull_request.head.sha }}`
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+      - name: Create Vercel Project JSON
+        run: mkdir .vercel && echo '${{ secrets.VERCEL_PROJECT_JSON }}' > .vercel/project.json
+      - name: Deploy to Netlify
+        id: netlify-deploy
+        run: echo "::set-output name=vercel_url::$(npx vercel deploy --token=${{ secrets.VERCEL_TOKEN }} --build-env NEXT_PUBLIC_BUILD=${{ github.event.pull_request.head.sha }} --confirm --no-clipboard)"
+      - name: Update Deploy Result Comment - Success
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-deploy-result-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            :rocket: The build has been deployed to Vercel.
+
+            - Commit hash: `${{ github.event.pull_request.head.sha }}`
+            - URL: ${{ steps.netlify-deploy.outputs.vercel_url }}
+      - name: Update Deploy Result Comment - Failed
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-deploy-result-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            :warning: Deployment has failed!
+
+            - Commit hash: `${{ github.event.pull_request.head.sha }}`
+            - GitHub Action: https://github.com/${{ github.repository }}/runs/${{ github.run_id }}
